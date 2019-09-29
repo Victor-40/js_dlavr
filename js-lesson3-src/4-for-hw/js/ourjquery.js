@@ -153,5 +153,14 @@ function OurJquery(elems){
 			}
 			return this;
 		}
+		if(typeof param1 == 'object' &  param2 == undefined){
+			for(let i = 0; i < this.elems.length; i++){
+				for(let property in param1){
+					this.elems[i].style[property] = param1[property];
+				}				
+			}
+			return this;
+		}
+
 	}
 }

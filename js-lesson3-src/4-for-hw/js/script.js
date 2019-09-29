@@ -15,15 +15,15 @@ window.addEventListener('load', function(){
 	
 	let items = $('.items .item');
 	
-	items.css('color', 'red'); // all red
-	console.log(items.css('color')); // first item red
+	items.css('color', 'white'); // all white
+	console.log(items.css('color')); // first item white
 
-	// /* применяются все указанные стили */
-	// items.css({
-	// 	display: 'inline-block',
-	// 	background: '#f90',
-	// 	cursor: 'pointer',
-	// 	padding: '10px'
-	// });
+	/* применяются все указанные стили */
+	items.css({
+		display: 'inline-block',
+		background: '#f90',
+		cursor: 'pointer',
+		padding: '10px'
+	});
 
 });
