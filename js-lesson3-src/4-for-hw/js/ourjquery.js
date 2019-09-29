@@ -144,6 +144,14 @@ function OurJquery(elems){
 	*/
 
 	this.css = function(param1, param2){
-		
+		if(typeof param1 == 'string' & param2 == undefined){
+			return this.elems[0].style[param1];
+		}
+		if(typeof param1 == 'string' & typeof param2 == 'string'){
+			for(let i = 0; i < this.elems.length; i++){
+				this.elems[i].style[param1] = param2;
+			}
+			return this;
+		}
 	}
 }
