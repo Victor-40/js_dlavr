@@ -117,7 +117,12 @@ function OurJquery(elems){
 			Установить значение свойства для всех элементов набора
 	*/
 	this.prop = function(name, value){
-		
+		if(value === undefined){
+			return this.elems[0][name];
+		}
+		this.elems[0][name] = value;
+		return this;
+
 	}
 
 	/*

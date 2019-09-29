@@ -3,6 +3,7 @@ window.addEventListener('load', function(){
 	/* тестирование дз №1 */
 
 	let check = $('.checkbox');
+	// console.log(check);
 
 	console.log(check.prop('checked')); // false
 	check.prop('checked', true); // в браузере поставится галочка
@@ -11,17 +12,17 @@ window.addEventListener('load', function(){
 
 	/* тестирование дз №2 */
 
-	let items = $('.items .item');
+	// let items = $('.items .item');
 
-	items.css('color', 'white'); // побелеют
-	console.log(items.css('color')); // red
+	// items.css('color', 'white'); // побелеют
+	// console.log(items.css('color')); // red
 
-	/* применяются все указанные стили */
-	items.css({
-		display: 'inline-block',
-		background: '#f90',
-		cursor: 'pointer',
-		padding: '10px'
-	});
+	// /* применяются все указанные стили */
+	// items.css({
+	// 	display: 'inline-block',
+	// 	background: '#f90',
+	// 	cursor: 'pointer',
+	// 	padding: '10px'
+	// });
 
 });
